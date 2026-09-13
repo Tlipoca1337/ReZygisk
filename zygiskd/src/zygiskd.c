@@ -593,7 +593,7 @@ void zygiskd_start(char *restrict argv[]) {
 
           break;
         }
-
+        close(fd);
         break;
       }
       case UpdateMountNamespace: {
